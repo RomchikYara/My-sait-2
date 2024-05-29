@@ -1,0 +1,428 @@
+:root {
+    --color1: #355070;
+    --color2: #6d597a;
+    --color3: #b56576;
+    --color4: #e56b6f;
+    --color5: #eaac8b;
+    --back: #FFE6D7;
+}
+
+body {
+    background-color: var(--back);
+    z-index: 1;
+}
+
+.button {
+    padding: 13px 19px;
+    background: linear-gradient(94.66deg, #4499D9 17.46%, #7367BE 87.77%);
+    border-radius: 25px;
+    color: #fff;
+}
+.h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 75px;
+    color: var(--color4);
+    margin-bottom: 25px;
+}
+
+.header {
+    position: relative;
+    z-index: 20;
+    height: 100%;
+}
+.main {
+    padding: 150px 0;
+    height: 100%;
+}
+.text-top {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 24px;
+    color: #446381;
+    margin-bottom: 31px;
+}
+.text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--color2);
+    margin-bottom: 29px;
+}
+.about {
+    margin-bottom: 300px;
+}
+.consol {
+    margin-bottom: 200px;
+}
+
+
+/*==================================================== HEADER ==========================================================*/
+/*==================================================== HEADER ==========================================================*/
+
+.header::before {
+    content: "";
+    position: absolute;
+    background: url(/image/backround/image\ 3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    background: url(/image/backround/DOTS.svg);
+    width: 123px;
+    height: 109px;
+    top: 294px;
+    right: 20px;
+    z-index: -1;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar .nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.images-box {
+    position: relative;
+}
+.images-box .block img {
+    top: 45px;
+    left: 125px;
+    position: absolute;
+    z-index: 50;
+}
+.images-box .img-men {
+    position: absolute;
+    top: -65px;
+    left: 70px;
+    z-index: 100;
+}
+.images-box .img-effect{
+    position: absolute;
+    left: 173px;
+    z-index: 100;
+}
+.images-box .img-effect:last-child{
+    z-index: 80;
+}
+
+.content{
+    position: relative;
+}
+.content::after{
+    position: absolute;
+    content: "";
+    background-image: url(/image/backround/cross.svg);
+    width: 112px;
+    height: 112px;
+    top: 65px;
+    left: -157px;
+}
+.content::before{
+    position: absolute;
+    content: "";
+    background-image: url(/image/backround/cross_2.svg);
+    width: 118px;
+    height: 118px;
+    bottom: -115px;
+    left: 170px;
+    animation: 10s linear infinite rotating;
+}
+
+@keyframes rotating {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.content p:first-child{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 24px;
+    color: var(--color1);
+}
+.content .title{
+    position: relative;
+}
+.content .title::before{
+    content: "";
+    position: absolute;
+    background-image: url(/image/backround/Arrow.svg);
+    width: 129px;
+    height: 29px;
+    top: -41px;
+    right: 35px;
+}
+.content .title span{
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 75px;
+    color: var(--color1);
+}
+
+.header-bottom {
+    padding: 150px 0 200px 0;
+}
+
+/*==================================================== HEADER ==========================================================*/
+/*==================================================== HEADER ==========================================================*/
+/*==================================================== ABOUT ==========================================================*/
+/*==================================================== ABOUT ==========================================================*/
+
+.about_image-box  {
+    position: relative;
+}
+.about_image-box img {
+    position: absolute;
+}
+.about_image-box img:first-child {
+    top: 130px;
+    left: 124px;
+    z-index: 100;
+}
+.about_image-box img:last-child {
+    top: -60px;
+    left: 250px;
+    animation: 3.3s linear infinite flying;
+}
+
+@keyframes flying {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    50% {
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+    }
+}
+
+/*==================================================== ABOUT ==========================================================*/
+/*==================================================== ABOUT ==========================================================*/
+
+/*==================================================== consol ==========================================================*/
+/*==================================================== consol ==========================================================*/
+
+.con_image-box {
+    position: relative;
+}
+.con_image-box img:first-child {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+}
+.con_image-box img:last-child {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    animation: 3.3s linear infinite flying;
+}
+.con_image-box::after {
+    content: "";
+    position: absolute;
+    background: url(../image/backround/gear_1.svg);
+    width: 137px;
+    height: 138px;
+    top: -10px;
+    left: 340px;
+    z-index: 100;
+    animation: 10s linear infinite reverse rotating;
+}
+
+
+.con_image-box::before {
+    content: "";
+    position: absolute;
+    background: url(../image/backround/gear_2.svg);
+    width: 84px;
+    height: 84px;
+    top: 90px;
+    left: 288px;
+    z-index: 100;
+    animation: 10s linear infinite rotating;
+}
+
+
+/*==================================================== consol ==========================================================*/
+/*==================================================== consol ==========================================================*/
+
+/*==================================================== prices ==========================================================*/
+/*==================================================== prices ==========================================================*/
+
+
+.prices-card {
+    padding: 20px 20px;
+    transition: all .3s;
+    position: relative;
+}
+
+
+.prices-card:hover {
+    padding: 0px 20px;
+}
+
+.container-card {
+    background: #FBDACF;
+    padding: 36px 46px;
+    border-radius: 20px;
+    transition: all .3s;
+    box-shadow: 0px 20px 50px rgba(132, 148, 205, 0.08);
+    margin: 0 auto;
+    max-width: 390px;
+}
+.container-card:hover {
+    background: linear-gradient(180deg, #446381 0%, #826F8C 100%);
+    padding: 50px 46px;
+    position: relative;
+}
+
+.container-card::after {
+    content: "";
+    position: absolute;
+    background: var(--color4);
+    width: 38px;
+    height: 38px;
+    top: 26px;
+    right: 28px;
+    border: 6px solid var(--color5);
+    border-radius: 50%;
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+}
+.container-card:hover::after {
+    display: block;
+    opacity: 1;
+}
+.container-card::before {
+    content: "";
+    position: absolute;
+    background: url(../image/backround/check.svg);
+    width: 18px;
+    height: 18px;
+    top: 37px;
+    right: 38px;
+    z-index: 100;
+    display: none;
+    transition: all .3s;
+}
+.container-card:hover::before {
+    display: block;
+}
+
+.price-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 27px;
+    color: #EB8382;
+    margin-bottom: 56px;
+}
+.price-title span{
+    font-size: 27px;
+}
+
+.container-card:hover .text-top, .container-card:hover .content-box p{
+    color: var(--back);
+}
+.content-box {
+    margin-bottom: 46px;
+    padding: 0 25px;
+}
+.content-box p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #826F8C;
+    margin-bottom: 40px;
+    position: relative;
+}
+.content-box p::before{
+    content: "";
+    position: absolute;
+    background: url(../image/icon/Vector.svg);
+    width: 14px;
+    height: 10px;
+    top: 8px;
+    left: -25px;
+}
+
+.container-card .text-top {
+    margin-bottom: 40px;
+}
+/*==================================================== prices ==========================================================*/
+/*==================================================== prices ==========================================================*/
+/*==================================================== footer ==========================================================*/
+/*==================================================== footer ==========================================================*/
+
+.footer {
+    padding: 25px 0;
+}
+.footer .text {
+    margin: 0 0;
+}
+
+.footer-icon {
+    margin: auto 0;
+}
+.footer-icon .item {
+    margin: 0 18px 0 0;
+}
+.footer-icon .item {
+    background: var(--color5);
+    padding: 10px 11px;
+    border-radius: 50%;
+}
+.footer-icon .item:first-child {
+    background: var(--color5);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.footer-icon .item:last-child {
+    margin: 0 0 0 0;
+}
+
+
+
+/*==================================================== footer ==========================================================*/
+/*==================================================== footer ==========================================================*/
+
+@media (max-width: 992px) {
+    .header::after {
+        display: none;
+        content: "";
+        position: absolute;
+        background: url(/image/backround/DOTS.svg);
+        width: 123px;
+        height: 109px;
+        top: 294px;
+        right: 20px;
+        z-index: -1;
+    }
+    .container-card {
+        background: #FBDACF;
+        padding: 36px 46px;
+        border-radius: 20px;
+        transition: all .3s;
+        box-shadow: 0px 20px 50px rgba(132, 148, 205, 0.08);
+        margin: 0 auto;
+        max-width: auto;
+    }
+    .nav-brand {
+        max-width: 200px;
+    }
+}
