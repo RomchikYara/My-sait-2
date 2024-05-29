@@ -56,6 +56,58 @@ body {
     margin-bottom: 200px;
 }
 
+.offcanvas {
+    background: var(--color5);
+}
+
+.burger {
+    z-index: 5000;
+    background: transparent;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--color1);
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+
+.ham3 .top {
+    stroke-dasharray: 40 130;
+}
+.ham3 .middle {
+    stroke-dasharray: 40 140;
+}
+.ham3 .bottom {
+    stroke-dasharray: 40 205;
+}
+.ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+}
+.ham3.active .middle {
+    stroke-dashoffset: -102px;
+}
+.ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+}
 
 /*==================================================== HEADER ==========================================================*/
 /*==================================================== HEADER ==========================================================*/
@@ -88,6 +140,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    color: var(--color2);
 }
 
 .images-box {
